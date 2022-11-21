@@ -1,0 +1,17 @@
+.c-button {
+    padding: 8px 20px 8px 20px;
+    background-color: $primary-color;
+    border: none;
+    color: $mono-white-color;
+    cursor: pointer;
+
+    &.submit-button {
+        padding: 8px 24px;
+    }
+
+    &--secondry {
+        background-color: $mono-white-color;
+        color: $mono-white-black;
+        font-family: $font-semibold;
+    }
+}

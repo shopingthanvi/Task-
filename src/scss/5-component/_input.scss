@@ -1,0 +1,12 @@
+.c-textarea {
+    width: 100%;
+    &:focus-visible {
+        outline: none;
+    }
+}
+
+.c-input {
+    &:focus-visible {
+        outline: none;
+    }
+}

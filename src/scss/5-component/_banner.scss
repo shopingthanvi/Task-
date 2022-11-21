@@ -1,0 +1,32 @@
+.c-banner {
+    background: url('./../../MaskGroup.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 550px;
+    width: 100%;
+    @include mobile{
+        height: 300px;
+    }
+    &__container{
+        padding-left: $xxl-padding;
+
+        @include mobile{
+            padding-left: $xxl-padding-responsive;
+        }
+        h1{
+            font-weight: $font-bold;
+        }
+    }
+    &__information {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        h1 {
+            margin: 0px;
+        }
+    }
+}
+.c-input{
+    width: 100%;
+}

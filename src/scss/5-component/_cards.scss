@@ -1,0 +1,48 @@
+.carusal-wrapper {
+    padding: 60px 80px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: $mono-white-color;
+    @include mobile{
+        padding: $xxl-padding-responsive $xxl-padding-responsive;
+    }
+
+    &__title {
+        font-family: 'Montserrat SemiBold';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.005em;
+    }
+
+    &__sub-title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        letter-spacing: 0.005em;
+    }
+}
+
+.c-card-detail {
+    width: 100%;
+    flex-direction: column;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+    &__card-image{
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+        background: #C4C4C4;
+        cursor: pointer;
+    }
+    &__card-text {
+        color: $mono-white-black;
+        font-family: 'Montserrat Medium';
+        margin-top: 40px;
+    }
+}

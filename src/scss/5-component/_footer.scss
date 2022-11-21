@@ -1,0 +1,45 @@
+.c-footer {
+    padding: $xxl-padding;
+    background-color: $mono-grey-black;
+    display: flex;
+    justify-content: space-between;
+    color: $mono-white-color;
+
+
+    @include mobile{
+        padding: $xxl-padding-responsive;
+    }
+    &__heading {
+        font-size: 20px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        @include mobile{
+            margin-top: 20px;
+        }
+        @include tablet{
+            margin-top: 20px;
+        }
+    }
+
+    &__link {
+        color: $mono-white-color;
+        font-size: $default-size;
+        text-decoration: none;
+        font-family: $font-semibold;
+        letter-spacing: 0.005em;
+
+        &:hover {
+            color: $primary-color;
+        }
+    }
+    &__icons{
+        &:hover{
+            filter: brightness(0) saturate(100%) invert(11%) sepia(47%) saturate(7091%) hue-rotate(355deg) brightness(113%) contrast(117%);
+            cursor: pointer;
+        }
+    }
+    @include mobile {
+        flex-direction: column;
+    }
+}
